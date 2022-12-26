@@ -1,0 +1,26 @@
+public class Main {
+    public static void main(String[] args) {
+        //creamos un objeto que nos permita manipular informacion
+        //aqui creamos Coche
+        Coche coche1 = new Coche();
+        /*Invocamos la funcion Sumarpuertas, la invocamos 4 veces, esto hara que la variable que se encuentra
+        dentro de ella se incremente o se altere, imprimmos la variable puertas*/
+        coche1.Sumarpuertas();
+        coche1.Sumarpuertas();
+        coche1.Sumarpuertas();
+        coche1.Sumarpuertas();
+        System.out.println(coche1.puertas);
+
+    }
+}
+// creamos la clase Coche
+    class Coche{
+    // creamos una variable que nos controle la cangtidad de puertas del coche
+        public int puertas = 0;
+        //creamos una fincion que nos permita incrementar el numero de puertas del coche
+        public void Sumarpuertas(){
+        this.puertas++;
+
+    }
+
+}
